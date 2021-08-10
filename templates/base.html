@@ -37,7 +37,6 @@
 
   <body>
     <main>
-        <h1>Welcome</h1>
         {% if messages %}
         <div class="message-container">
             {% for message in messages %}
@@ -63,10 +62,6 @@
         {% block content %}
         {% endblock %}
         
-        <!-- Scroll back to top button     -->
-        <div class="container-fluid">
-            <a id="back-to-top" href="#" class="btn btn-light btn back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
-        </div>
     </main>
     
 

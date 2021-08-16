@@ -4,10 +4,9 @@ from django.shortcuts import render, HttpResponse
 
 
 def say_hello(request):
-    template = 'structure_gen/structure_gen.html'
+    template = 'structure_gen/index.html'
     context = {
         
     }
 
     return render(request, template, context)
-    

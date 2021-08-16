@@ -1,0 +1,50 @@
+[
+  {
+    "pk": 1,
+    "model": "structure_gen.story",
+    "fields": {
+      "name": "Freytag’s Pyramid: Five-Act Structure",
+      "overview": "",
+      "structure_one": "FreytagExposition — Introduce important background information",
+      "structure_two": "Rising action— Tell a series of events to build up to the climax",
+      "structure_three": "Climax— Turn the story around(usually the most exciting part of the story)",
+      "structure_four": "Falling action— Continue the action from the climax",
+      "structure_five": "Dénouement— Ending the story with a resolution",
+      "example_one": "",
+      "example_two": "",
+      "image_url": ""
+    }
+  },
+  {
+    "pk": 2,
+    "model": "structure_gen.story",
+    "fields": {
+      "name": "Future pacing",
+      "overview": "",
+      "structure_one": "Before– After– Bridge",
+      "structure_two": "Before— Describe the world with Problem A",
+      "structure_three": "After— Imagine what it’ d be like having Problem A solved",
+      "structure_four": "Bridge— Here’ s how to get there",
+      "structure_five": "",
+      "example_one": "Before: You’ re tired of spending hours trying to create images for your blog posts.You’ ve tried using other image creation tools, but they never work for you! After: Imagine having a tool that makes it easy to create professional - looking images in minutes.With Canva, you can choose from hundreds of professionally designed templates and customize them with just a few clicks.It’ s so simple even non designers can use it! Bridge: Try Canva today and see how easy it is to create beautiful images without being an expert designer.",
+      "example_two": "Before: You want to create a professional - looking image, but you don’ t have the skills or time. After: Canva is an online graphic design tool that makes it easy for anyone to create images and designs for free.Just select your template, add your own photos and text, and share with friends on Facebook or Twitter.It’ s simple! Bridge: With Canva, you can easily make beautiful images in minutes without any design experience at all.Try it now at www.canva.com!",
+      "image_url": ""
+    }
+  },
+  {
+    "pk": 3,
+    "model": "structure_gen.story",
+    "fields": {
+      "name": "Problem– Agitate– Solve",
+      "overview": "",
+      "structure_one": "Problem— Present a problem",
+      "structure_two": "Agitate— Agitate the problem",
+      "structure_three": "Solve— Solve the problem",
+      "structure_four": "",
+      "structure_five": "",
+      "example_one": "Problem: Designing a logo, banner or any other image for your business can be hard.Agitate: It’ s a painful process that takes up too much time and costs too much money. Solution: Canva is the answer to this problem.With our easy - to - use design tool you can create stunning designs in minutes, without needing to hire an expensive designer.Our online graphic design software is trusted by over 10 million users and has been featured on Forbes, Inc., Entrepreneur & Mashable as one of the best free tools for small businesses.We’ ve got all the right tools to help you make amazing images - from templates and graphics to fonts and stock photos - so you have everything you need at your fingertips!",
+      "example_two": "",
+      "image_url": ""
+    }
+  }
+]

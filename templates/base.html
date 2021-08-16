@@ -43,16 +43,16 @@
                 {% with message.level as level %}
                     <!-- error -->
                     {% if level == 40 %} 
-                        {% include 'includes/toasts/toast_error.html' %}
+                        {% include 'includes/toasts/toast_error' %}
                     <!-- warning -->
                     {% elif level == 30 %}
-                        {% include 'includes/toasts/toast_warning.html' %}
+                        {% include 'includes/toasts/toast_warning' %}
                     <!-- success -->
                     {% elif level == 25 %}
-                        {% include 'includes/toasts/toast_success.html' %}
+                        {% include 'includes/toasts/toast_succes' %}
                     <!-- else info -->
                     {% else %}
-                        {% include 'includes/toasts/toast_info.html' %}
+                        {% include 'includes/toasts/toast_info' %}
                     {% endif %}
                 {% endwith %}
             {% endfor %}

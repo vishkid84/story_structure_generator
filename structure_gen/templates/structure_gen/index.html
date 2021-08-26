@@ -6,9 +6,40 @@
         <div class="row">
             <div class="col">
                 <h1>Working</h1>
+                    <div id="randomStory"></div>
+                    <button id="storyBtn" class="btn-primary">Get random story</button>
             </div>
         </div>
 
     </div>
+
+
+<script>
+    const randStoryButton = document.getElementById("storyBtn");
+    $(randStoryButton).click(function(){
+        let randomStory = document.getElementById("randomStory");
+        let randomContent = 
+        `<div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="media">
+                        <div >
+                            <h2>{{ random_story.name }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `
+        randomStory.innerHTML = "";
+        randomStory.innerHTML = randomContent;
+        console.log("{{ random_story.name }}");
+        return randomStory;
+    })
+    function get_random(){
+        
+        
+    }
+</script>
 
 {% endblock %}

@@ -2,44 +2,31 @@
 {% load static %}
 
 {% block content %}
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Working</h1>
-                    <div id="randomStory"></div>
-                    <button id="storyBtn" class="btn-primary">Get random story</button>
-            </div>
-        </div>
 
+<div class="container mt-5">
+    <div class="row">
+        <div class="col">
+            <h2>Introduction</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin placerat, justo id porta ultricies, ante felis blandit lorem, sed sagittis augue purus in ipsum. Phasellus pharetra ex in interdum sodales. Sed nibh nulla, porta a placerat vel, aliquet feugiat eros. Cras sit amet lectus non nulla tincidunt imperdiet at ac nibh. Aliquam vestibulum sollicitudin odio, ac iaculis sapien rhoncus sit amet. Ut ut quam vel enim dignissim blandit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Praesent ultricies varius nunc, et laoreet quam viverra a. Donec vel ex feugiat, semper neque ultrices, condimentum odio. Maecenas venenatis, tortor vel tincidunt gravida, est nisi venenatis sapien, molestie suscipit mauris urna sit amet turpis. Curabitur nec euismod mi. Etiam vel urna vestibulum, feugiat enim et, egestas felis. Proin hendrerit erat purus. Nam at tincidunt quam, eu sollicitudin lacus.
+            </p>
+            <button onClick="window.location.reload();" class="btn btn-secondary text-center">Generate a random story structure</button>
+            <hr>
+            <form class="mt-5">
+                <h2>{{ random_story.name }}</h2>
+                <div class="form-group">
+                    {% if random_story.overview %}
+                    <label for="storyName" class="mt-4">{{random_story.overview}}</label>
+                    <textarea class="form-control" id="storyName" rows="6">{{random_story.example_one}}</textarea>
+                    {% endif %}
+                    <label for="storyName" class="mt-4">{{random_story.structure_one}}</label>
+                    <textarea class="form-control" id="storyName" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary">Share on Facebook</button>
+                <button type="submit" class="btn btn-primary">Share on LinkedIn</button>
+            </form>
+        </div>
     </div>
+</div>
 
-
-<script>
-    const randStoryButton = document.getElementById("storyBtn");
-    $(randStoryButton).click(function(){
-        let randomStory = document.getElementById("randomStory");
-        let randomContent = 
-        `<div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="media">
-                        <div >
-                            <h2>{{ random_story.name }}
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        `
-        randomStory.innerHTML = "";
-        randomStory.innerHTML = randomContent;
-        console.log("{{ random_story.name }}");
-        return randomStory;
-    })
-    function get_random(){
-        
-        
-    }
-</script>
 
 {% endblock %}
